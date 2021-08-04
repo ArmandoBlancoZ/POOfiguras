@@ -12,7 +12,7 @@ public class figuras {
     }
 
     public void triangulo() {
-       float base, altura, area;
+        float base, altura, area;
         base = Integer.parseInt(JOptionPane.showInputDialog("ingrese la base del triangulo"));
         altura = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la altura del triangulo"));
         area = (base * altura) / 2;
@@ -20,13 +20,23 @@ public class figuras {
 
     }
 
-    public void circulo(){
-    double area, radio, perimetro, diametro;
-    diametro = Integer.parseInt(JOptionPane.showInputDialog("ingrese el diametro del circulo"));
-    radio = diametro/2;
-    area = 3.14 * Math.pow(radio, 2);
-    perimetro = 2 * 3.14 * radio;
-    JOptionPane.showMessageDialog(null, "El area del circulo es: " + area);
-    JOptionPane.showMessageDialog(null, "El perimetro del circulo es: " + perimetro);
-}
+    public void circulo() {
+        double area, radio, perimetro, diametro;
+        diametro = Integer.parseInt(JOptionPane.showInputDialog("ingrese el diametro del circulo"));
+        radio = diametro / 2;
+        area = 3.14 * Math.pow(radio, 2);
+        perimetro = 2 * 3.14 * radio;
+        JOptionPane.showMessageDialog(null, "El area del circulo es: " + area);
+        JOptionPane.showMessageDialog(null, "El perimetro del circulo es: " + perimetro);
+    }
+
+    public void rectangulo() {
+        double area, base, altura, perimetro;
+        base = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la base del rectangulo: "));
+        altura = Integer.parseInt(JOptionPane.showInputDialog("ingrese la altura del rectangulo: "));
+        area = base * altura;
+        perimetro = (base * 2) + (altura * 2);
+        JOptionPane.showMessageDialog(null, "El area del rectangulo es: " + area);
+        JOptionPane.showMessageDialog(null, "El perimetro del rectangulo es: " + perimetro);
+    }
 }
